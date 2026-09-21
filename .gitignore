@@ -1,0 +1,11 @@
+# Pastas de Build e Distribuicao
+dist/
+build/
+
+# Cache do Python
+__pycache__/
+*.pyc
+
+# Base de Dados
+*.db
+*.sqlite3
