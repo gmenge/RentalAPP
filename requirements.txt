@@ -6,3 +6,4 @@ openpyxl
 xlrd
 odfpy
 python-docx
+pillow>=13.0.0

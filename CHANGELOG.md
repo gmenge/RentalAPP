@@ -38,9 +38,13 @@ Mudanças do LocaFácil, sistema desktop de gestão de aluguéis de equipamentos
 - O histórico de contratos concluídos ficava sempre vazio.
 - As colunas da tabela do Dashboard não se alinhavam com os títulos.
 
+### Segurança
+
+- O executável passa a usar o `pillow` 13.0.0, que corrige vulnerabilidades conhecidas das versões anteriores.
+
 ### Para quem compila o projeto
 
-- Novas dependências: `tkcalendar`, `openpyxl`, `xlrd`, `odfpy` e `python-docx`. Instale com `pip install -r requirements.txt`.
+- Novas dependências: `tkcalendar`, `openpyxl`, `xlrd`, `odfpy`, `python-docx` e `pillow`. Instale com `pip install -r requirements.txt`.
 - Gere o executável com `pyinstaller --noconfirm main.spec`.
 - Bancos de dados existentes são atualizados automaticamente ao abrir o programa.
 - Arquivos `.doc` antigos não são lidos: salve-os como `.docx` antes de importar.
