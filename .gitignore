@@ -1,11 +1,37 @@
 # Pastas de Build e Distribuicao
 dist/
 build/
+*.exe
 
 # Cache do Python
 __pycache__/
 *.pyc
 
-# Base de Dados
+# Ambientes virtuais e variaveis locais
+.venv/
+venv/
+.env
+.env.*
+
+# Base de Dados (contem dados de clientes)
 *.db
+*.db-journal
+*.db-wal
+*.db-shm
 *.sqlite3
+backups/
+
+# Planilhas e documentos com dados reais
+*.xlsx
+*.xlsm
+*.xls
+*.ods
+*.csv
+*.tsv
+*.docx
+*.doc
+
+# Logs e arquivos de editor
+*.log
+.vscode/
+.idea/
