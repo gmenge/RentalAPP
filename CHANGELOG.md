@@ -2,6 +2,15 @@
 
 Mudanças do LocaFácil, sistema desktop de gestão de aluguéis de equipamentos.
 
+## Registro de correções
+
+### GL-01 a GL-06: 01/11/2026
+
+- **GL-03:** adicionados `README.md` e `LICENSE`.
+- **GL-04:** adicionados testes automatizados, verificação no GitHub Actions e Dependabot.
+- **GL-06:** versões fixadas; `requirements-dev.txt` separa as ferramentas de compilação e teste.
+- **Testado com:** `python -m pytest` e `python -m compileall`.
+
 ## Atualização de 01/11/2026
 
 ### Importante
@@ -45,6 +54,6 @@ Mudanças do LocaFácil, sistema desktop de gestão de aluguéis de equipamentos
 ### Para quem compila o projeto
 
 - Novas dependências: `tkcalendar`, `openpyxl`, `xlrd`, `odfpy`, `python-docx` e `pillow`. Instale com `pip install -r requirements.txt`.
-- Gere o executável com `pyinstaller --noconfirm main.spec`.
+- Para compilar, instale `requirements-dev.txt` e rode `pyinstaller --noconfirm main.spec`.
 - Bancos de dados existentes são atualizados automaticamente ao abrir o programa.
 - Arquivos `.doc` antigos não são lidos: salve-os como `.docx` antes de importar.
