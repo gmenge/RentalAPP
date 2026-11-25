@@ -38,3 +38,7 @@ backups/
 
 # Testes
 .pytest_cache/
+
+# Arquivos locais do assistente
+CLAUDE.md
+.claude/
